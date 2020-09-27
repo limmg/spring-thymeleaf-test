@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>测试thymeleaf6</title>
+</head>
+<body>
+<div th:text="${#dates.format(date,'yyyy年MM月dd日')}"></div>
+<hr>
+<div th:text="${#numbers.formatDecimal(price,1,4)}"></div>
+<hr>
+<div th:text="${#strings.abbreviate(str,20)}"></div>
+<hr>
+<div th:text="${#strings.substring(sub,0,5)}"></div>
+
+
+</body>
+</html>

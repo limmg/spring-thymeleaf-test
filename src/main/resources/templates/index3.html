@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>测试thymeleaf3</title>
+</head>
+<body>
+
+<span th:text="'欢迎进入'+${msg}+'世界'"></span><br>
+<span th:text="|这是我的${msg},你快滚|"></span>
+<br>
+
+<img th:src="${img}"/>
+
+<br>
+
+<a th:href="${href}">点击一下！</a>
+
+
+<hr/>
+</body>
+</html>

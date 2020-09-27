@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>测试thymeleaf6</title>
+</head>
+<body>
+
+<span>测试insert，本身标签和div都要，大字体</span>
+<div th:insert="~{footer:: copy}"></div>
+<div th:insert="~{footer:: copy2}"></div>
+<div th:insert="~{footer:: copy3}"></div>
+<hr/>
+<span>测试replace，要自己标签，大字体</span>
+<div th:replace="~{footer:: copy}"></div>
+<div th:replace="~{footer:: copy2}"></div>
+<div th:replace="~{footer:: copy3}"></div>
+<hr/>
+<span>测试include,不要自己h标签，要div标签，小字体</span>
+<div th:include="~{footer:: copy}"></div>
+<div th:include="~{footer:: copy2}"></div>
+<div th:include="~{footer:: copy3}"></div>
+
+
+
+</body>
+</html>

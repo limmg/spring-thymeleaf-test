@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>测试thymeleaf5</title>
+</head>
+<body>
+
+<span th:if="${flag}">不会显示</span><br>
+<span th:if="!${flag}">显示</span><br>
+
+<span th:unless="${flag}">显示</span><br>
+
+<div th:switch="${num}"><br>
+
+    <p th:case="${manager}">不会显示的manager</p><br>
+    <p th:case="1">等于1显示</p>
+
+</div>
+
+
+
+
+
+</body>
+</html>
